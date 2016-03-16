@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+  <title>Angular Practice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+
+<section ng-controller="StoreController as store">
+    <div class="container-fluid">
+      <h3>
+        {{ store.product.name }}
+        <em class="pull-right">
+          {{store.product.price}}
+        </em>
+      </h3>
+    </div>
+</section>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
